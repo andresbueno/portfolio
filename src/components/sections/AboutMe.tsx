@@ -1,15 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
 `;
 
 const ProfileSection = styled.div`
   display: flex;
-  align-items: center;
   gap: 20px;
   margin-bottom: 20px;
 `;
@@ -21,13 +20,33 @@ const ProfileImage = styled.img`
   object-fit: cover;
 `;
 
+const ProfileInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const Name = styled.h1`
-  margin: 0;
+  margin: 0 0 10px 0;
+`;
+
+const SocialLink = styled.a`
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 5px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  svg {
+    margin-right: 5px;
+  }
 `;
 
 const Description = styled.div`
   text-align: justify;
-  max-width: 800px;
   
   p {
     margin-bottom: 15px;
@@ -39,7 +58,15 @@ const AboutMe: React.FC = () => {
     <AboutContainer>
       <ProfileSection>
         <ProfileImage src="https://via.placeholder.com/200" alt="Andres Mauricio Bueno Peña" />
-        <Name>Andres Bueno</Name>
+        <ProfileInfo>
+          <Name>Andres Bueno</Name>
+          <SocialLink href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin /> LinkedIn
+          </SocialLink>
+          <SocialLink href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+            <FaGithub /> GitHub
+          </SocialLink>
+        </ProfileInfo>
       </ProfileSection>
       <Description>
         <p>

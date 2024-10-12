@@ -3,8 +3,12 @@ import styled from 'styled-components';
 
 const ProjectsContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 `;
 
 const ProjectCard = styled.div`
@@ -16,22 +20,23 @@ const ProjectCard = styled.div`
 
 const ProjectImage = styled.img`
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: cover;
 `;
 
 const ProjectContent = styled.div`
-  padding: 20px;
+  padding: 15px;
 `;
 
 const ProjectTitle = styled.h2`
   margin: 0 0 10px 0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 `;
 
 const ProjectDescription = styled.p`
   margin: 0;
   color: #ccc;
+  font-size: 0.9rem;
 `;
 
 const projects = [

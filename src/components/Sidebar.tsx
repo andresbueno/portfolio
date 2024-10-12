@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { FaUser, FaBriefcase, FaCode, FaCogs, FaHeart } from 'react-icons/fa';
 
