@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Sidebar from './components/Sidebar';
-import Content from './components/Content';
+import { useRoutes } from 'react-router-dom';
+import routes from './routes';
 
 const AppContainer = styled.div`
   display: flex;
@@ -11,12 +12,12 @@ const AppContainer = styled.div`
 `;
 
 const App: React.FC = () => {
-  const [activeSection, setActiveSection] = useState('about');
+  const routing = useRoutes(routes);
 
   return (
     <AppContainer>
-      <Sidebar activeSection={activeSection} setActiveSection={setActiveSection} />
-      <Content activeSection={activeSection} />
+      <Sidebar />
+      <div style={{ flex: 1 }}>{routing}</div>
     </AppContainer>
   );
 };
