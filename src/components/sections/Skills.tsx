@@ -30,19 +30,6 @@ const Skills: React.FC = () => {
           <li>MongoDB</li>
         </ul>
       </div>
-      <pre><code>{`
-// Example TypeScript code
-interface Skill {
-  name: string;
-  level: 'Beginner' | 'Intermediate' | 'Advanced';
-}
-
-const skills: Skill[] = [
-  { name: 'React', level: 'Advanced' },
-  { name: 'TypeScript', level: 'Advanced' },
-  { name: 'Node.js', level: 'Intermediate' },
-];
-      `}</code></pre>
     </SkillsContainer>
   );
 };
