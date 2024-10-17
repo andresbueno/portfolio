@@ -59,13 +59,13 @@ const AboutMe: React.FC = () => {
   return (
     <AboutContainer>
       <ProfileSection>
-        <ProfileImage src="https://via.placeholder.com/200" alt="Andres Mauricio Bueno Peña" />
+        <ProfileImage src="src\assets\Personal Photo.png" alt="Andres Mauricio Bueno Peña" />
         <ProfileInfo>
           <Name>Andres Bueno</Name>
-          <SocialLink href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener noreferrer">
+          <SocialLink href="https://www.linkedin.com/in/andres-mauricio-bueno-pe%C3%B1a/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin /> LinkedIn
           </SocialLink>
-          <SocialLink href="https://github.com/your-github" target="_blank" rel="noopener noreferrer">
+          <SocialLink href="https://github.com/andresbueno" target="_blank" rel="noopener noreferrer">
             <FaGithub /> GitHub
           </SocialLink>
         </ProfileInfo>
