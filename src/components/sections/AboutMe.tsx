@@ -5,6 +5,8 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
 `;
 
 const ProfileSection = styled.div`

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ProjectsContainer = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;

@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HobbiesContainer = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+
   .hobby {
     margin-bottom: 15px;
   }
@@ -19,11 +22,6 @@ const Hobbies: React.FC = () => {
         <h2>Coding Side Projects</h2>
         <p>In my free time, I enjoy working on personal coding projects to learn new technologies.</p>
       </div>
-      <pre>
-        {/* <code>{`
-
-      `}</code> */}
-      </pre>
     </HobbiesContainer>
   );
 };

@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SkillsContainer = styled.div`
+  max-width: 800px;
+  margin: 0 auto;
+
   .skill-category {
     margin-bottom: 20px;
   }
