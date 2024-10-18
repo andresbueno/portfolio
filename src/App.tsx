@@ -4,6 +4,10 @@ import Sidebar from './components/Sidebar';
 import { useRoutes } from 'react-router-dom';
 import routes from './routes';
 
+interface ContentContainerProps {
+  sidebarOpen: boolean;
+}
+
 const AppContainer = styled.div`
   display: flex;
   height: 100vh;
@@ -11,10 +15,10 @@ const AppContainer = styled.div`
   color: #ffffff;
 `;
 
-const ContentContainer = styled.div`
+const ContentContainer = styled.div<ContentContainerProps>`
   flex: 1;
   padding: 2rem;
-  margin-left: ${props => props.sidebarOpen ? '250px' : '60px'};
+  margin-left: ${props => (props.sidebarOpen ? '250px' : '60px')};
   transition: margin-left 0.3s ease-in-out;
 `;
 
